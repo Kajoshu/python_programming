@@ -1,0 +1,7 @@
+hours = int(input("Enter the number of hours worked."))
+rate = float(input("What is your pay rate per hour?"))
+
+pay = hours * rate
+
+print("You worked for " + str(hours) + " hours you will be paid " + str(pay) +" dollars")
+            
