@@ -1,0 +1,16 @@
+try:
+    hours = float(input("Enter the number of hours worked."))
+    rate = float(input("What is your pay rate per hour? "))
+    pay = 0 
+
+    if hours > 40:
+        extraHours = hours - 40
+        additionalPay = extraHours * 1.5 * rate
+        pay = 40* rate + additionalPay 
+	
+    else:
+        pay = hours * rate 
+    print("You worked for " + str(hours) + " hours you will be paid " + str(pay) +" dollars")
+except:
+    print("Please enter Numeric Input")
+              
